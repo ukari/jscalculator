@@ -28,6 +28,7 @@ function calculator_button_listener(id)
 	screen_text = document.getElementById("screen_text");
 	screen = document.getElementById("screen");
 	cal_history_screen_text = document.getElementById("cal_history_screen_text");
+        cal_history_screen = document.getElementById("cal_history_screen");
 	if (id < 19) {
 		calculator['expression'] += calculator['buttons'][id][0];
 		refreshExpressionModeScreen();
@@ -88,7 +89,8 @@ function refreshAnswerModeScreen()
 
 	calculator['answer'] = quoteProcess(calculator['expression']);
 	cal_history_text += calculator['expression'] + " = " + calculator['answer'] + "<br>";
-	cal_history_screen_text.innerHTML = cal_history_text;
+        cal_history_screen_text.innerHTML = cal_history_text;
+        cal_history_screen.scrollTop = 10000;
 	if (calculator['answer'] == null){
 		calculator['answer'] = "input error";
 		calculator['expression'] = "";
