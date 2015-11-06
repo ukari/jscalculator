@@ -2,9 +2,9 @@
 
 ## How to run
 
-* $ cd jscalculate
+* $ cd jscalculator
 * $ rackup
-    
+
 ## Operator List:
 
 * ( : left quote
@@ -33,6 +33,6 @@
 If you hit any problems, please first ensure that you are using the latest version
 of this code, and that you have updated your packages to the most recent available
 versions (see "Updates" above). If you still experience problems, go ahead and
-[file an issue on the github project](https://github.com/ukari/jscalculator).
+[file an issue on the github project](https://github.com/ukari/jscalculator/issues).
 
 -Muromi Ukari
